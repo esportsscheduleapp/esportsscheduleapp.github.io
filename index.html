@@ -35,8 +35,10 @@
   li{background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px 18px}
   li b{display:block; font-size:16px; margin-bottom:2px}
   li span{color:var(--sub); font-size:14.5px}
-  .cta{display:inline-block; background:var(--red); color:#fff; text-decoration:none;
-       font-weight:700; font-size:17px; padding:15px 30px; border-radius:12px; margin:8px 0 10px}
+  /* 구글 공식 배지. 가이드라인대로 **비율을 바꾸지 않고**, 둘레에 배지 높이의
+     1/4 이상 여백을 둔다. 글자를 덧쓰거나 색을 바꾸지 않는다. */
+  .cta{display:inline-block; margin:10px 0 12px; line-height:0}
+  .cta img{height:60px; width:auto; display:block}
   .cta:hover{filter:brightness(1.08)}
   .plat{color:var(--dim); font-size:14px; margin:0 0 8px}
   footer{margin-top:52px; padding-top:26px; border-top:1px solid var(--line);
@@ -67,7 +69,9 @@
   </p>
   <div class="bar"></div>
 
-  <a class="cta" href="https://play.google.com/store/apps/details?id=com.esportsschedule.app">Google Play에서 받기</a>
+  <a class="cta" href="https://play.google.com/store/apps/details?id=com.esportsschedule.app">
+    <img src="play-badge.png" alt="Google Play에서 다운로드하기" width="155" height="60">
+  </a>
   <p class="plat">무료 · 광고 포함 · Android 전용 · 한국어 / English / Tiếng Việt</p>
 
   <h2>주요 기능</h2>
